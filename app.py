@@ -34,7 +34,7 @@ APPS = [
         "branch": "main",
         "entry_path": "aplicativo.py",
         "description": "Aplicativo para gerenciamento/divulgação de evento.",
-        "app_url": guess_streamlit_url("bomcabelo","evento-streamlit","main","aplicativo.py"),
+        "app_url": guess_streamlit_url("https://evento-app-7gxfdv3xwusgrt4sjaeenn.streamlit.app/"),
         "github_url": "https://github.com/bomcabelo/evento-streamlit",
     },
     {
