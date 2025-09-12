@@ -34,7 +34,7 @@ APPS = [
         "branch": "main",
         "entry_path": "aplicativo.py",
         "description": "Aplicativo para gerenciamento/divulgação de evento.",
-        "app_url": guess_streamlit_url("bomcabelo","evento-streamlit","main","aplicativo.py"),
+        "app_url": guess_streamlit_url("bomcabelo","evento-streamlit","main","app.py"),
         "github_url": "https://github.com/bomcabelo/evento-streamlit",
     },
     {
@@ -44,7 +44,7 @@ APPS = [
         "branch": "main",
         "entry_path": "app.py",
         "description": "Gerador de conteúdo com LLM focado em SEO.",
-        "app_url": guess_streamlit_url("https://dsa-day-trade-analytics-dsvnvnovhvepuj3u6yr5bu.streamlit.app/"),
+        "app_url": guess_streamlit_url("bomcabelo","marketing-llm-streamlit","main","app.py"),
         "github_url": "https://github.com/bomcabelo/marketing-llm-streamlit",
     },
 ]
