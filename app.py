@@ -44,7 +44,7 @@ APPS = [
         "branch": "main",
         "entry_path": "app.py",
         "description": "Gerador de conteúdo com LLM focado em SEO.",
-        "app_url": guess_streamlit_url("marketing-llm-app-fgubhkrcw7fbpxieuwmcyo.streamlit.app"),
+        "app_url": guess_streamlit_url("bomcabelo","marketing-llm-streamlit","main","app.py"),
         "github_url": "https://github.com/bomcabelo/marketing-llm-streamlit",
     },
 ]
