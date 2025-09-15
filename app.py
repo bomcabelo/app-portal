@@ -7,13 +7,7 @@ st.set_page_config(page_title="Portal de Apps", page_icon="🗂️", layout="wid
 # =========================
 # Catálogo dos seus apps
 # =========================
-def guess_streamlit_url(owner: str, repo: str, branch: str, entry_path: str) -> str:
-    """
-    Gera a URL do app no Streamlit Cloud a partir do padrão de nomeação:
-    https://{owner}-{repo}-{branch}-{entry_path_with_dashes}.streamlit.app
-    """
-    slug_path = re.sub(r"[^a-zA-Z0-9]", "-", entry_path).strip("-").lower()
-    return f"https://{owner}-{repo}-{branch}-{slug_path}.streamlit.app"
+
 
 APPS = [
     {
@@ -24,7 +18,7 @@ APPS = [
         "entry_path": "dsa_app.py",
         "description": "Dashboard analítico para day trade (DSA).",
         # Se já souber a URL exata, pode sobrescrever em "app_url"
-        "app_url": guess_streamlit_url("bomcabelo","dsa-day-trade-analytics","main","dsa_app.py"),
+        "app_url": "https://bomcabelo-dsa-day-trade-analytics-main-dsa-app.streamlit.app", # URL gerada manualmente com base no padrão
         "github_url": "https://github.com/bomcabelo/dsa-day-trade-analytics",
     },
     {
@@ -34,7 +28,7 @@ APPS = [
         "branch": "main",
         "entry_path": "aplicativo.py",
         "description": "Aplicativo para gerenciamento/divulgação de evento.",
-        "app_url": guess_streamlit_url("bomcabelo","evento-streamlit","main","aplicativo.py"),
+        "app_url": "https://bomcabelo-evento-streamlit-main-aplicativo.streamlit.app", # URL gerada manualmente com base no padrão
         "github_url": "https://github.com/bomcabelo/evento-streamlit",
     },
     {
@@ -44,7 +38,7 @@ APPS = [
         "branch": "main",
         "entry_path": "app.py",
         "description": "Gerador de conteúdo com LLM focado em SEO.",
-        "app_url": guess_streamlit_url("https://marketing-llm-app-3h3nx3vpxf8qymo5tzhjbe.streamlit.app/"),
+        "app_url": "https://marketing-llm-app-3h3nx3vpxf8qymo5tzhjbe.streamlit.app/",
         "github_url": "https://github.com/bomcabelo/marketing-llm-streamlit",
     },
 ]
@@ -110,3 +104,5 @@ st.markdown(
 st.caption(
     "Se a URL gerada não abrir, copie o endereço do app no Streamlit Cloud e substitua o campo `app_url`."
 )
+
+
